@@ -1,34 +1,174 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+	 crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+	 crossorigin="anonymous">
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Simple header</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active">Back Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link"> The Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Pricing of Websites</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Questions</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">All About This</a></li>
-    </ul>
+<body>
+  <header class="p-2 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav-col 12 col-lg-auto me-lg-auto mb-2 justify-content-center mb md-0">
+          <li><a id="mainbutton" onclick="showmainpage()" class="nav-link px-2 text-white">Home</a></li>
+          <li><a id="projectbutton" onclick="showprojectpage()" class="nav-link px-2 text-white">My Projects</a></li>
+          <li><a id="journalbutton" onclick="showjournalpage()" class="nav-link px-2 text-white">My Journal</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
-  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">I am a random black box. Do not ask.</text></svg>
-    <script src="script.js">
 
-    </script>
-  </body>
+  <main id="mainpage" class="container">
+    <div class="row mt-3 p-3 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="col-md-6">
+        <h1 class="display-4 fst-italic">Welcome to my Portfolio!</h1>
+        <p class="lead my-3">Hi, my name is Ayden Soh and welcome to my portfolio!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="Hero.png" alt="d-block mx-lg-auto img-fluid">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italicboder-bottom">Content Space</h3>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Content Space</h2>
+          <p class="blog-post-meta"></p>
+          <p></p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst italic">Content Space</h4>
+          <p class="mb-0"></p>
+        </div>
+        <div class="p-4">
+          <h4 class="fst italic">Content Space</h4>
+          <ol class="list-unstyled">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ol>
+        </div>
+        <div class="p-4"></div>
+      </div>
+    </div>
+  </main>
+  <!--Project Page-->
+  <div id="projectpage" class="container">
+    <div class="row mb-2">
+      <!--Project 1-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
+            <h3 class="mb-0">Portfolio Page</h3>
+            <p class="card-text mb-auto">My first webpage! Read about me here!</p>
+            <a href="https://PortfolioBioAyden.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 2-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
+            <h3 class="mb-0">Wikipedia Page-Electricity</h3>
+            <p class="card-text mb-auto">This is a wikipedia of Electricity, one of the World's 50 breakthrough inventions.</p>
+            <a href="https://Electricipedia.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 3-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Javascript DJ</h3>
+            <p class="card-text mb-auto">This is a digital sound board that you make music with!</p>
+            <a href="https://JavaScript-DJ.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 4-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Choose your own Adventure (1)</h3>
+            <p class="card-text mb-auto">This story has two endings. Make sure you get it right!</p>
+            <a href="https://Covid-19-Story.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 5-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Choose your own adventure (2)</h3>
+            <p class="card-text mb-auto">Another story on the same topic.</p>
+            <a href="https://Covid-19-Story-2.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 6-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Idol Resume</h3>
+            <p class="card-text mb-auto">This is a resume on my idol that I put my research on.</p>
+            <a href="https://DAGames-Idol.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 7-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Phaser Game</h3>
+            <p class="card-text mb-auto">This is a game I made with th Phaser JS library.</p>
+            <a href="https://phaser-d4-starter.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+      <!--Project 8-->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sn h-md-250 position related">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Choropleth Map</h3>
+            <p class="card-text mb-auto">This is a map of residents living in 7 areas.</p>
+            <a href="https://dataviz-d5-starter-1.aydensoh.repl.co" class="stretched-link">Go to the page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Journal Page-->
+  <div id="journalpage">
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shr1L4nEqSIGGTHRo?backgroundColor=cyanLight" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
+  <!--Scratch Game-->
+  <div id="journalpage">
+    <iframe src="https://scratch.mit.edu/projects/399813567/embed" allowtransparency="true" width="1500" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  </div>
+		<script src="script.js">
+
+		</script>
+</body>
 
 </html>
